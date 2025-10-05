@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Specificity</title>
+    <style>
+        .heading-1 {
+            font-size: 100px;
+        }
+        h1 {
+            font-size: 50px;
+        }
+
+        h1 {
+            font-size: 75px;
+        }
+        /* The 75px will show */
+        * {
+            font-size: 40px;
+            /* Mainly used for the items below */
+            /* box-sizing: border-box;
+            margin: 0;
+            padding: 0; */
+        }
+
+        #main-heading {
+            font-size: 60px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1 class="heading-1" id="main-heading">Specificity</h1>
+    <!-- Inline overwrites all internal or external -->
+     <span>Test</span>
+</body>
+</html>
+
+<!-- 
+    #Specificity:
+        -Priority of a particular style over another style
+        -On inspect- If striked through, it means that the new style is overwriting the previous default style
+
+        -Rule
+            -Latest style rule applies
+            -Inline will have more priority
+            -Inline > Internal, External
+        
+        -Priority (rank from top to bottom)
+            1. ID Selector (#ID)
+            2. Class Selector (.class)
+            3. Element Selector (h1, p, div, img, etc)
+            4. Universal Selector (*)- Lowest- Not used much
+
+        -Additional Note:
+            -!important: This keyword overwrites the other rules 'Forcefully' without specificity restrictions (Overuse is not a good practice)
+-->

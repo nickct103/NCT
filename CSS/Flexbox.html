@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        h1 {
+            text-align: center;
+        }
+        .container {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        .card {
+            border: 1px solid black;
+            background-color: #EEE;
+            border-radius: 6px;
+            margin: 10px 50px;
+            padding: 10px;
+        }
+
+        .card img {
+            border-radius: 10px 10px 0 0;
+        }
+        /* .container-2 {
+            display: flex;
+            border: 1px solid black;
+            height: 500px;
+            justify-content: center;
+            align-items: center;
+        } */
+
+        /* .container-2 {
+            display: flex;
+            border: 1px solid black;
+            height: 1000px;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        } */
+
+        .container-2 {
+            display: flex;
+            border: 1px solid black;
+            height: 100vh;
+            flex-direction: column;
+            flex-wrap: wrap;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Flex</h1>
+    <!-- <ul style="display: flex; list-style: none;">
+        <div style="display: flex;">
+            <li>Home</li>
+            <li>Home</li>
+        </div>
+        <div style="display: flex;">
+            <li>Home</li>
+            <li>Home</li>
+        </div>
+    </ul> -->
+    <!-- <div class="container">
+        <div class="card">
+            <img src="https://m.media-amazon.com/images/I/61kFL7ywsZS._AC_SY300_SX300_QL70_FMwebp_.jpg">
+            <p>JBL Headphones</p>
+            ⭐⭐⭐⭐ (27k+)
+            <p>$199.99</p>
+            <button>Add to cart</button>
+            <button>Buy Now</button>
+        </div>
+        <div class="card">
+            <img src="https://m.media-amazon.com/images/I/61kFL7ywsZS._AC_SY300_SX300_QL70_FMwebp_.jpg">
+            <p>JBL Headphones</p>
+            ⭐⭐⭐⭐ (27k+)
+            <p>$199.99</p>
+            <button>Add to cart</button>
+            <button>Buy Now</button>
+        </div>
+        <div class="card">
+            <img src="https://m.media-amazon.com/images/I/61kFL7ywsZS._AC_SY300_SX300_QL70_FMwebp_.jpg">
+            <p>JBL Headphones</p>
+            ⭐⭐⭐⭐ (27k+)
+            <p>$199.99</p>
+            <button>Add to cart</button>
+            <button>Buy Now</button>
+        </div>
+         <div class="card">
+            <img src="https://m.media-amazon.com/images/I/61kFL7ywsZS._AC_SY300_SX300_QL70_FMwebp_.jpg">
+            <p>JBL Headphones</p>
+            ⭐⭐⭐⭐ (27k+)
+            <p>$199.99</p>
+            <button>Add to cart</button>
+            <button>Buy Now</button>
+        </div>
+         <div class="card">
+            <img src="https://m.media-amazon.com/images/I/61kFL7ywsZS._AC_SY300_SX300_QL70_FMwebp_.jpg">
+            <p>JBL Headphones</p>
+            ⭐⭐⭐⭐ (27k+)
+            <p>$199.99</p>
+            <button>Add to cart</button>
+            <button>Buy Now</button>
+        </div>
+         <div class="card">
+            <img src="https://m.media-amazon.com/images/I/61kFL7ywsZS._AC_SY300_SX300_QL70_FMwebp_.jpg">
+            <p>JBL Headphones</p>
+            ⭐⭐⭐⭐ (27k+)
+            <p>$199.99</p>
+            <button>Add to cart</button>
+            <button>Buy Now</button>
+        </div>
+    </div>     -->
+    <div class="container-2">
+        <img src="https://images.unsplash.com/photo-1662638600476-d563fffbb072?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cHJvZ3JhbW1pbmclMjBsYW5ndWFnZXxlbnwwfHwwfHx8MA%3D%3D" height="200" style="flex-grow: 1">
+        <img src="https://images.unsplash.com/photo-1610563166150-b34df4f3bcd6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8cHJvZ3JhbW1pbmclMjBsYW5ndWFnZXxlbnwwfHwwfHx8MA%3D%3D" height="200">
+        <img src="https://images.unsplash.com/photo-1669023414162-5bb06bbff0ec?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fHByb2dyYW1taW5nJTIwbGFuZ3VhZ2V8ZW58MHx8MHx8fDA%3D" height="250">
+    </div>
+</body>
+</html>
+
+<!-- 
+    #Flexbox
+        - Organize elements in one direction
+        - Properties
+            - display: flex ** (Element flexible in nature)
+            -flex-direction ***: Set the direction of flex container's elements
+                -row (default)
+            - justify-content **: Align the child elements within the flex container across main axis
+                -start (default)
+                -end: End of the container
+                -center: Center of the container
+                -space-around: Around each element/ Equal space around each element (space in between will be 2* space)
+                -space-evenly: Equal space on both the sides (space in betwen will be merged)
+                -space-between: Space in between 2 elements
+            -align-items **: Align the child elements within the flex container through the cross axis
+                -start (default)
+                -end: End of the container
+                center: Center of the containter
+            -flex-wrap: Wrap the child elements if they exceed the parent container's width
+                -no-wrap(default): No wrapping
+                -wrap: Wrap child elements to the next row
+            -Elements
+                -order: Set the order of individual items
+                    -Min and Default (0): The lesser, the higher or placement
+
+
+        # Main and Cross axis
+            -flex-direction: row
+                -Main axis: X axis
+                -Cross axis: Y axis
+            -flex-direction: column
+                -Main axis: Y axis
+                -Cross axis: X axis
+
+
+-->

@@ -1,0 +1,110 @@
+<html>
+    <head>
+        <title>HTML Tables</title>
+        <!--Ignore style till CSS is covered-->
+        <style>
+            /* Below is CSS */
+            table, tr, th, td {
+                border: 1px solid black;
+                border-collapse: collapse;
+                padding: 5px;
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Tables</h1>
+        <!-- <table>
+            <tr>
+                <th>Name</th>
+                <th>Role</th>
+                <th>Status</th>
+            </tr>
+            <tr>
+                <td>Nick</td>
+                <td>Admin</td>
+                <td>Inactive</td>
+            </tr>
+            <tr>
+                <td>Oscar</td>
+                <td>Editor</td>
+                <td>Active</td>
+            </tr>
+            <tr>
+                <td>Val</td>
+                <td>CFO</td>
+                <td>Active</td>
+            </tr>
+        </table> -->
+        <table>
+            <tr>
+                <th>Student Name</th>
+                <th>Favorite Color</th>
+                <th>Favorite Fruit</th>
+            </tr>
+            <tr>
+                <td>Simon</td>
+                <td>Red</td>
+                <td>Apple</td>
+            </tr>
+            <tr>
+                <td>Maria</td>
+                <td colspan="2">Orange</td>
+                <!-- <td>Orange</td>  -->
+            <tr>
+                <td rowspan="2">Anaya</td>
+                <td>Blue</td>
+                <td>Pineapple</td>
+            </tr>
+            <tr>
+                <!-- <td>Anaya</td> Take this out for rowspan -->
+                <td>Yellow</td>
+                <td>Banana</td>
+            </tr>
+            <!-- <tr>
+                <td colspan="3">Test</td>
+            </tr> -->
+        </table>
+    </body>
+</html>
+
+<!-- The shorcut for this below is by typing html:5 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html> --
+
+
+    #Tables:
+        -Display data in rows and column format
+        -Tags:
+            -<table></table>: Wrapper tag for HTML Tables
+            -<tr></tr>: Table rows
+            -<th></th>: Table Headers
+            -<td></td>: Table data (cells)
+        -Boilerplate syntax for tables:
+            <table>
+            <tr>
+                <th>Table Header 1</th>
+                <th>Table Header 2</th>
+            </tr>
+            <tr>
+                <td>Table Data 1</td>
+                <td>Table Data 2</td>
+            </tr>
+        -Span
+            - Spanning is another word for Merge
+            -Span can never be added to tr
+            - colspan: column span
+                -Data to be same across 'n' number of columns within a ros
+            - rowspan: row span
+                -Data to be same across 'n' number of row within a column
+
+-->

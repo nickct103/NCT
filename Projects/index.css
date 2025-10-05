@@ -1,0 +1,136 @@
+/* Global */
+#navbar {
+    background-color: #1c4b8f;
+    color: #E9E9E9;
+    padding: 5px 10px;
+    margin-top: 0;
+    text-align: center;
+}
+#navbar li {
+    display: inline-block;
+    margin: 0 40px;
+}
+#navbar ul li {
+    display: inline-block;
+    text-decoration: none;
+}
+
+#navbar ul li a {
+    color: #E9E9E9;
+    font-size: 24px;
+}
+/* Header */
+#header {
+    text-align: center;
+}
+
+#header h1{
+    font-size: 64px;
+    margin-bottom: 0px;
+}
+
+#header p{
+    font-size: 24px;
+    margin-top: 5px;
+}
+
+#header ul{
+    list-style: none;
+    padding-left: 0;
+}
+
+#header ul li{
+    display: inline-block;
+    margin: 0 20px;
+}
+
+#header ul li a{
+    color: #1C4B8F;
+    text-decoration: none;
+}
+/* Body */
+body {
+    background-color: #E9E9E9;
+    color: #1c4b8f
+}
+
+/* About */
+#about {
+    margin-top: 30px;
+    background-color: #1c4b8f;
+    color: #E9E9E9;
+    padding: 5px 10px;
+    border-radius: 10%;
+}
+
+/* Experience */
+#experience {
+    border: 2px solid #1c4b8f;
+    margin-top: 10px;
+    padding: 5px 10px;
+    border-radius: 10px;
+    background-color: white;
+    
+}
+#experience>ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+#experience .single-exp>li{
+    font-size: 20px;
+    font-weight: 600;
+    /* change color? */
+}
+
+#experience .single-exp div {
+    text-align: right;
+}
+
+/* projects */
+#projects {
+    margin-top: 30px;
+    text-align: center;
+}
+
+#projects .projects {
+    display: inline-block;
+    width: 250px;
+    height: 100px;
+    margin: 0 10 px;
+    background-color: #1c4b8f;
+    color:#E9E9E9;
+    font-size: 24px;
+    padding: 100px 10px;
+    box-sizing: border-box;
+}
+
+#projects .projects:hover {
+    cursor: pointer;
+}
+
+#projects .projects a {
+    color: #E9E9E9;
+    text-decoration: none;
+}
+
+/* Skills */
+#skills {
+    margin-top: 30px;
+    background-color: #1c4b8f;
+    color: #E9E9E9;
+    padding: 5px 10px;
+    border-radius: 10%;
+}
+
+#profile img{
+    width: 200px;
+    height: 300px;
+    border: 5px solid #1c4b8f;
+    padding: 10px;
+    margin: 10px;
+    box-sizing: border-box;
+}
+
+
+   

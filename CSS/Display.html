@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display</title>
+    <style>
+        #span-1 {
+            display: block;
+        }
+
+        #heading-1 {
+            display: inline;
+            width: 200px;
+        }
+
+        #span-2 {
+            display: inline-block;
+            width: 100px;
+            height: 100px;
+            border: 1px solid black;
+        }
+
+        #p-1 {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="heading-1">Heading1</h1>
+    <span>sub-context</span>
+
+    <span id="span-1">Display</span>
+    <span id="span-2">Bloop</span>
+    <span>Burp</span>
+
+    <div>
+        <p id="p-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae sunt ullam eius magni voluptate numquam aperiam quisquam illum provident beatae?</p>
+    </div>
+    <h1>Hello</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore error ea beatae rerum, iure necessitatibus est autem nisi sit illo aliquid vitae quod magni odio dicta pariatur, voluptatum quibusdam vero iusto placeat obcaecati! Cum quis adipisci amet quae voluptatibus illum, ullam odit, suscipit facere doloribus, a ad facilis dolor. Impedit.</p>
+</body>
+</html>
+
+<!--
+    #Display ***MIT
+        - Set the nature of a particular element
+        -Values
+            -block: make a specific element 'block' in nature
+            -inline: Make a specific element 'inline' in nature
+                -width and height cannot be applied to inline elements
+            -inline-block: Be similar to inline in nature but with a provision to add width and height properties. Similar to inline + width/height
+            -none: Hide a specific element
+
+    #Additional note:
+        -Can be used to hide elements from the HTML webpage
+            -visibility: hidden
+                - Remove the element, space retained
+            -none (remove the element + space)
+
+
+
+    #Future (will learn in the future)
+        -flex, grid
+-->

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CSS Basics</title>
+    <!-- Below is the link to the CSS file  of external styling-->
+    <link rel="stylesheet" href="style1.css">
+    <!-- <style>
+        a {
+            color:green;
+        }
+    </style> -->
+    <!-- Internal Syling -->
+     <!-- <style></style> -->
+</head>
+<body>
+    <h1>CSS Basics</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt aliquid quidem veniam fugiat beatae atque neque dolores, velit quos! Neque non alias nulla, corrupti ipsam id adipisci perspiciatis dicta reprehenderit voluptatem consectetur vero nemo deleniti! Odit laudantium quae sunt doloribus quis nesciunt quidem aspernatur suscipit, similique consequuntur, inventore quisquam. Nam labore vel molestias cumque laudantium minus velit veritatis perspiciatis deleniti, repellendus, ipsam neque error voluptatum explicabo. Voluptatibus vero perspiciatis eveniet alias ea voluptates aliquid nemo dicta et ratione. Quas totam dolor ut suscipit explicabo a consequuntur nostrum soluta! Repudiandae adipisci eum quam atque quos modi debitis nulla saepe cupiditate deserunt.</p>
+    <img src="https://media.istockphoto.com/id/2170889984/photo/digital-abstract-cpu-ai-artificial-intelligence-and-machine-learning-concept.webp?a=1&b=1&s=612x612&w=0&k=20&c=zGSV2_Jth30uGNDD7g-XV-nJTxRL2HH2O3qJH7T3AV4=">
+    <img src="https://media.istockphoto.com/id/2170889984/photo/digital-abstract-cpu-ai-artificial-intelligence-and-machine-learning-concept.webp?a=1&b=1&s=612x612&w=0&k=20&c=zGSV2_Jth30uGNDD7g-XV-nJTxRL2HH2O3qJH7T3AV4=">
+    <ul>
+        <li><a href="https://www.facebook.com/" style="color: gray">Facebook</a></li>
+        <li><a href="https://www.instagram.com/" style="color: gray">Instagram</a></li>
+        <li><a href="https://www.twitter.com/" style="color: gray">Twitter</a></li>
+    </ul>
+
+    <h2 style="color: rgb(255, 255, 255)">Color Code</h2>
+</body>
+</html>
+
+<!-- 
+    # CSS
+        -Cascading Style Sheets
+        -"Search on Google for color themes for webpages"
+        -"Figma"- Create a protype of your webpage.
+        -"Canva"- create a template for your webpage.
+        -Adds styles to webpage initially created using HTML
+        -3 Types of styling:
+            _Inline Styling will take priority compared to Internal and External
+            -Inline Styling
+                -'style' attribute
+                -Syntax:
+                    -style="property:value"
+                    -style="property1:value1; property2:value2:..."
+                        -property: name of the style
+                        -value: value for that style
+                    <h1 style="property: value">Test</h1>
+            -Internal Syling
+                -'style' tag (inside head tag)
+                -Syntax:
+                    -<style>
+                        h1 {
+                        property1:value1;
+                         property2:value2;
+                        }
+                    </style>
+            -External Styling
+                    -Create a separate .css file
+                    -Link this external file to the HTM file
+                        -Syntax:
+                            <link rel="stylesheet" href="relative-path.css">
+                                -rel: Relation
+                                -href: Relative path of CSS file
+        -Properties:
+            -color: Add color to an element
+            -background-color: Background Color of the element
+            -font-size: Size of text element
+            -font-weight: Bold or Light (values can be anywhere between 100-900 in increments of 100)
+            -border: Border added to an element
+                    -Syntax
+                        -border: [border-width] [border-style] [border-width]
+                    -Sub propertiees
+                        -border-width: Width of the border
+                        -border-style: Border Style (solid, dashed, dotted)
+                        -border-color: Border color
+            -border-radius: more rounded corner
+            -width: width of the element
+            -height: Height of the element
+            -padding: Space around the content before the border
+            -margin: Space around the content after the border
+            -padding, margin
+                -Syntax: top, right, bottom, left
+                -Sub propertiees
+                    -padding-top: Padding on the top
+                    padding-right: Padding on the right
+                    padding-bottom: Padding on the bottom
+                    padding-left: Padding on the left
+                -More Syntax:
+                    -1 unit: All sides
+                    -2 Units: [top, bottom] [right, left]
+                    -3 Units: [top] [right, left] [bottom]
+            -font-family: font type of the text element
+            -text-align: Align the text center/left/right/justify
+
+    #***Selectors
+        -Simple Selectors:
+            -Elements Selector (h1, p, img)
+            -Class Selector (.)
+            -ID Selector (#)
+            -Universal Selector (*)
+
+    # Class vs ID
+        -Multiple elements can have same class
+        -No two elements can have the same ID
+
+    #Specific RUles
+        - Inline . Internal, External
+        - Latest style will be applied
+
+    #Color codes
+        -RGB (Red, Green, Blue)
+            -Syntax: rgb(0-255. 0-255, 0-255) (R, G, B)
+                -Can have values of of anything from 0-255
+            -RGBA (A-Opacity/Transparency)
+                -A: 0-1(0 is invisible, 1 is visible)
+        -HEX (0-F)
+            -Syntax: #RRGGBB
+                -RR, GG, BB can have values from 00-FF
+                -#0000FF = Blue
+                -#FF0000= Red
+                -#00FF00 = Green
+                -#000000= Black
+                -#FFFFFF = White
+            -Alpha- 2 more digits added at the end.
+
+
+    #Additional notes
+                    -comment- /* */
+
+HW: Inspect a webpage and find the CSS on the webpage
+-->

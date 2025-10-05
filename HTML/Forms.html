@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Forms</title>
+    </head>
+    <body>
+        <div>
+        <form>
+            <h1>Application Form</h1>
+            Name: <input type="text" name="name" placeholder="Enter your name" required><br><br>
+            Age: <input type="number" name="age" placeholder="Enter your age" disabled value="31"><br><br>
+            Email: <input type ="email" name="email" placeholder="Enter your email" required><br><br>
+            Password: <input type="password" name="password" placeholder="Enter your password" required><br><br>
+            Confirm Password: <input type="password" placeholder="Enter password" required><br><br>
+            Date of graduation: <input type="datetime-local"><br><br>
+            Resume: <input type="file"><br><br>
+            Gender:
+                <select name="gender2">
+                    <option value="M">Male</option>
+                    <option value="F">female</option>
+                    <option value="O">others</option>
+                </select>
+            Gender: <input type="radio" name="gender" checked>Male
+            <input type="radio" name="gender">Female<br><br>
+            <!-- <input type="hidden"> -->
+            <!-- Favorite color: <input type="color"> -->
+            Hobbies : <input type="checkbox" name="hobbies">Working Out
+            <input type="checkbox" name="hobbies">Music
+            <input type="checkbox" name="hobbies" checked>Family<br><br>
+            Describe your experience<br>
+            <textarea rows="10" cols="50" maxlength="100"></textarea><br><br>
+            <button type="Submit">Submit</button>
+        </form>
+        </div>
+</body>
+</html>
+
+<!-- 
+    #Forms:
+        -USed to collect data from the user
+        -USE 'alt' to typee in multiple spots at once
+        -Tags:
+            -<form></form>: Wrapper tag for HTML forms
+            -input: Input field for user input/data
+                -type attribute
+                    -text: SImple Text input- self closing tag- will recieve any text. It will hold multiple characters in the text field.
+                    -number: Number input from the user. negative numbers are supported. No fractions
+                    -email : Email input (Support coming from the browser as well.) (Browser Validation)
+                    -password: Password (default for password is for the characters to be hidden)
+                    -date: Date
+                    -datetime-local: Date + Time Input
+                    -time: Input Time
+                    -file: Upload FIles
+                    -radio: Single Selection
+                        -checked: Specific radio box will be selected by default
+                    -checkbox: Multiple selection
+                    -hidden: process the information but not shown to the user
+                -'name' attribute: Provides identity to the input field
+                -'value' attribute: Default value for the input field
+                -'placeholder' attribute: Provide a Hint
+                -'required' attribute: Make any field required
+                -'disable' attribute: will not allow user to input field
+            -button: Creates Buttons
+                -'type' attribute
+                    -submit: Used to submit a form
+                    -reset: Used to reset inputs from a form
+                    -button: Random button in the form
+            -select: Dropdown (Single Selection)
+                -option tag: Individual options
+            -textarea: Lengthy text inputs
+                -'rows' attribute: Number of rows
+                -'cols' attribute: Number of columns
+                -'maxlength' attribue: Number of characters that can be accepted.
+            
+HW: Share snapshot of a table set up of a form
+-->

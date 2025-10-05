@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+    <style>
+        /* img {
+            width: 300px;
+            height: 300px;
+            border: 5px solid black;
+            padding: 10px;
+            margin: 10px;
+            box-sizing: border-box;
+        } */
+
+        #parent {
+            border: 2px solid black;
+            width: 300px;
+            height: 600px;
+            box-sizing: border-box;
+        }
+
+        .child {
+            width: 300px;
+            height: 300px;
+            border: 2px solid black;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <h1>Box Model</h1>
+    <!-- <img src="https://media.istockphoto.com/id/2170889984/photo/digital-abstract-cpu-ai-artificial-intelligence-and-machine-learning-concept.webp?a=1&b=1&s=612x612&w=0&k=20&c=zGSV2_Jth30uGNDD7g-XV-nJTxRL2HH2O3qJH7T3AV4="> -->
+
+    <div id="parent">
+        <div class="child">CHILD</div>
+        <div class="child">CHILD</div>
+    </div>
+</body>
+</html>
+
+<!-- 
+    # Box Model: ***MIT
+        -To better determine the overall dimensions of an element
+        -4 different parts
+            -Content (The Blue Area): Actual dimension of the element
+            -Padding (The Green Area): Space inside the border
+            -Border Width (THe Yellow color area): Border width
+            -Margin (The Orange area): Space outside the border
+        -'box-sizing': Control the dimension of an element
+            -content-box (default): 
+                -Width and height only applies to the content part
+            -border-box: (like an airline suitcase)
+                -width and height applies to [content + padding + border}
+                    -These three will apply to the box sizing
+-->

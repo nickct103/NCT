@@ -1,0 +1,77 @@
+<html>
+    <head>
+        <title>Lists, Images, Links and Attributes</title>
+    </head>
+    <body>
+        <h1>Lists</h1>
+        <h2>Grocery List</h2>
+        <ul>
+            <li>Milk</li>
+            <li>Eggs</li>
+            <li>Chicken</li>
+        </ul>
+
+        <h2>Steps to update your zoom profile name</h2>
+        <ol>
+            <li>Update neame on your Codecademy portal</li>
+            <li>Relaunch Zoom</li>
+            <li>Reach out to branch manager if still having issues</li>
+        </ol>
+
+        <hr>
+
+        <h1>Images</h1>
+        <img src="images/fotis-fotopoulos-6sAl6aQ4OWI-unsplash.jpg" height="400" width="600" alt="developer">
+        <!--This is a comment within the code-->
+
+        <hr>
+
+        <h1>Links</h1>
+        <a href="https://www.facebook.com/login.php/?lang=en-US" target="_blank">Facebook</a> <br>
+        <a href="https://www.google.com/" target="_blank">Google</a><br>
+        <a href="/Basics.html" target="_blank">HTML Basics</a>
+
+        <!-- could be replaced with "_self" instead of "_blank" -->
+    </body>
+</html>
+
+
+<!--
+    #Lists (Paired Tags): 
+        -Display multiple related elements
+        -<ul></ul>: unordered Lists
+        -<ol></ol>: ordered lists
+        -Tags
+            -<ul></ul>: unordered Lists
+            -<ol></ol>: ordered lists
+            -<li></li>: List item
+
+    # Images:
+        -Tags: <img>
+        -Syntax: <img src="link of the image">
+        -Just an <img> tag will not be enough. It needs more information
+        -Default size for image is from the actual source for the image
+        -From your local computer, you can upload your image to the folder that you are working with your code and use the title of that image as the source (src)
+
+    #Links:
+        -Reference to another webpage
+        -Tag: <a> (Anchor)
+        -Syntax: <a href="link-to-another-webpage"></a> 
+
+    #Attributes:
+        -Add more properties to HTML tags
+        -The attribute will be added to the opening tag
+        -Not all tags have attributes
+        -Syntax: <tag1 attribute1="value1"></tag1> (any tag)
+        -ex: <h1 color="red">Test</h1>
+            -img
+                -src: Source of image (mandatory attribute)
+                -alt(optional): Alternate text if image fails to load
+                -height: set the height (pixels) (optional)
+                -width: set the width (pixels) (optional)
+            -<a></a>
+                -href (mandatory): Hypertext/URL reference
+                -target (optional):
+                    -_self (default): Load the link in the same tab
+                    -_blank: load the link in a new tab.
+-->

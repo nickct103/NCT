@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Full Stack Application</title>
+    </head>
+    <body>
+        <h1>My Learning</h1>
+            <p>The process of learning HTML so far has been a simple one. What we will see below is the many things that I have learned so far just within the first week.</p>
+        <hr>
+        <!-- HTML -->
+        <div>
+        <h2>HTML</h2>
+            <p>
+                HTML stands for Hypertext Markup Language. This language allows coders or developers to build Webpages. In turn, these webpages will be interlinked together to create a website with multiple webpages. In this section I will go over the basics of HTML and what each element is used for.
+            </p>
+            <!-- Tags -->
+            <div>
+            <h3>Tags</h3>
+                <p>
+                    Tags are the building block of the HTML structure and are used in a variety of different ways depending on the webpage that is being created.There are two different types of tags: Paired Tags and Self Closing Tags.
+                </p>
+                <h4>Paired Tags</h4>
+                <p>Paired tags are two sets of similar tags that are nicknamed opening and closing tags. The difference between an opening and closing tag is that the closing tag will have a "/" before the tag. <br>Examples:</p>
+                <ul>
+                    <li>html-/html- Start of an HTML document</li>
+                    <li>head-/head- What will display on the tab or heading of a document. Usually consists of another Paired Tag of title-/title.</li>
+                    <li>body-/body- The body of the text of where the elements will go.</li>
+                    <li>headings (h1, h2, h3, h4, h5, h6)- Headings are used to create different sizes of text with h1 being the largest and h6 being the smallest.</li>
+                    <li>p-/p- Paragraph format in which you can type large bodies of text.</li>
+                </ul>
+                <h4>Self Closing Tags</h4>
+                <ul>
+                    <li>br- Line Breaks are when you can start a brand new line</li>
+                    <li>hr- horizontal line- Example is the line underneath the caption under the heading showing "My Learning."</li>
+                    <li>img- adding images</li>
+                </ul>
+            </div>
+            <div>
+            <h3>Boilerplate</h3>
+                <p>
+                    The Boilerplate is the foundation of any HTML webpage. It consists of an opening and closing html tag, opening and closing title tag and an opening and closing body tag. Below is an example of the Boilerplate when you type "html:5" into the Code Editor.
+                </p>
+                <img src="images/boilerplate.png" alt="Boilerplate Screenshot">
+            <h3>Attributes</h3>
+                <p>Attributes are items that are added to the opening tag to add a diiferent structure to the code that you are writing. Just like in img, we need an attribute that will show us what the source (src) would be.</p>
+                <img src="images/atributes.png" alt="Attribute example">
+                <p>The src is the location of an image that is being used and alt means alternate name in the offchance that the image doesn't load.</p>
+            <h3>Tables</h3>
+                <table>
+                    <tr>
+                        <th>Student Name</th>
+                        <th>Favorite Color</th>
+                        <th>Favorite Fruit</th>
+                    </tr>
+                    <tr>
+                        <td>Simon</td>
+                        <td>Red</td>
+                        <td>Apple</td>
+                    </tr>
+                    <tr>
+                        <td>Maria</td>
+                        <td colspan="2">Orange</td>
+                        <!-- <td>Orange</td>  -->
+                    <tr>
+                        <td rowspan="2">Anaya</td>
+                        <td>Blue</td>
+                        <td>Pineapple</td>
+                    </tr>
+                    <tr>
+                        <!-- <td>Anaya</td> Take this out for rowspan -->
+                        <td>Yellow</td>
+                        <td>Banana</td>
+                    </tr>
+                    <!-- <tr>
+                        <td colspan="3">Test</td>
+                    </tr> -->
+                </table>
+            <h3>Semantic Tags</h3>
+            <h3>Forms</h3>
+                <form>
+                    <h4>Application Form</h4>
+                        Name: <input type="text" name="name" placeholder="Enter your       name" required><br><br>
+                        Age: <input type="number" name="age" placeholder="Enter your       age" disabled value="31"><br><br>
+                        Email: <input type ="email" name="email" placeholder="Enter        your email" required><br><br>
+                        Password: <input type="password" name="password"       placeholder="Enter your password" required><br><br>
+                        Confirm Password: <input type="password" placeholder="Enter        password" required><br><br>
+                        Date of graduation: <input type="datetime-local"><br><br>
+                        Resume: <input type="file"><br><br>
+                        Gender:
+                            <select name="gender2">
+                                <option value="M">Male</option>
+                                <option value="F">female</option>
+                                <option value="O">others</option>
+                            </select>
+                        Gender: <input type="radio" name="gender" checked>Male
+                            <input type="radio" name="gender">Female<br><br>
+                        <!-- <input type="hidden"> -->
+                        <!-- Favorite color: <input type="color"> -->
+                        Hobbies : <input type="checkbox" name="hobbies">Working Out
+                            <input type="checkbox" name="hobbies">Music
+                            <input type="checkbox" name="hobbies" checked>Family<br><br>
+                        Describe your experience<br>
+                            <textarea rows="10" cols="50" maxlength="100"></textarea><br><br>
+                            <button type="Submit">Submit</button>
+                 </form>
+            <h3>Block and Inline</h3>
+            </div>
+        <h2>CSS</h2>
+            <h3>CSS Syntax</h3>
+            <h3>Basic Selectors</h3>
+            <h3>Color Formats</h3>
+            <h3>Padding</h3>
+            <h3>Margin</h3>
+        </div>
+    </body>
+</html>
