@@ -37,11 +37,21 @@
             -git commit -m "Message": Commit changes
             -git remote add origin [remote repository link]: Link local repository to remote repository
             -git push -u origin main- Upload the code to the remote repository linked in 'master' branch
+        -Second time and onwards
+            -git add: Stage files
+                -git add file1.html: Stage file`.html
+                -git add .: Stage all files
+            -git commit -m "Message": Commit changes
+            -git push: Push commited changes to master branch in the remote repository
 
         -Generic
             -git status: Current status of local repository
     -Working with Remotes
-
+# Steps to download a project on Github
+    -First time:
+        -git clone [remote repository link]: Clone of online repository in local machine
+    -Second time and onwards
+        -git pull: Pull latest commits from 'master' branch in the remote repository to local repository
 # Branches:
     -Default (master/main)
     -Separate branches can be created to work on individual features. For ex., in Amazon: Separate branches for Amazon pay, Shopping, Streaming
