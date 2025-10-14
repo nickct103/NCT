@@ -1,0 +1,55 @@
+/* https://cssgradient.io/ */
+
+.custom-header {
+    background: #fff0f0;
+    background: linear-gradient(181deg, rgba(255, 240, 240, 1) 0%, rgba(9, 9, 121, 1) 97%, rgba(0, 212, 255, 1) 100%);
+}
+
+#bluey {
+    background: #fff0f0;
+    background: linear-gradient(181deg, rgba(255, 240, 240, 1) 0%, rgba(174, 170, 240, 1) 100%, rgba(9, 9, 121, 1) 97%, rgba(0, 212, 255, 1) 100%);
+}
+
+.friend-card {
+    max-width: 600px;
+}
+
+.friend-card .mutual-friends {
+    margin-left: 10px;
+}
+
+.friend-card .mutual-friends img {
+    border-radius: 50%;
+    margin-left: -10px;
+}
+
+@media screen and (max-width: 768px) {
+    #category-section {
+        margin-bottom: 1rem;
+    }
+
+    .friend-card {
+        text-align: center;
+        padding: 1em;
+        max-width: 300px;
+        margin: auto;
+        max-width: 300px;
+    }
+
+    .friend-card img .rounded-start {
+        width: 100px !important;
+        border-radius: 50% !important;
+    }
+
+    .friend-card .friend-name {
+        flex-direction: column;
+    }
+
+    .friend-card-card-text {
+        padding-bottom: 0.5em;
+    }
+
+    .friend-card .mutual-friends {
+        padding-bottom: 1em;
+    }
+}
