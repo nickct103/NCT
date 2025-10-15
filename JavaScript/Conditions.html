@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conditions</title>
+</head>
+<body>
+    <h1>Conditions in JavaScript</h1>
+    <script>
+        /*
+            # Conditions in JavaScript:
+                - Create decision-making structures. Create logic based on boolean value.
+                -Syntax:
+                    if (condition) {
+                        // code to be executed if condition is true
+                    } else if (condition) {
+                        // code to be executed if this condition is true
+                    } else {
+                        // code to be executed if condition 1 and condition 2 is false
+                    }
+
+                    
+                - Used to perform different actions based on different conditions.
+                - Types:
+                    - if
+                    - if...else
+                    - if...else if...else
+                    - switch
+                - Comparison Operators:
+                    - Equal to (==)
+                    - Not equal to (!=)
+                    - Strict equal to (===)
+                    - Strict not equal to (!==)
+                    - Greater than (>)
+                    - Less than (<)
+                    - Greater than or equal to (>=)
+                    - Less than or equal to (<=)
+                - Logical Operators:
+                    - Logical AND (&&): All TRUE to return TRUE
+                    - Logical OR (||): One TRUE to return TRUE
+                    - Logical NOT (!): True to False and False to True
+                - Ternary Operator:
+                    - Syntax: condition ? expressionIfTrue : expressionIfFalse
+                    - Example: var result = (age >= 18) ? "Adult" : "Minor"
+
+            - Switch Statement:
+                - Used to perform different actions based on different conditions.
+                - Syntax:
+                    switch(expression) {
+                        case value1:
+                            // code to be executed if expression === value1
+                            break;
+                        case value2:
+                            // code to be executed if expression === value2
+                            break;
+                        ...
+                        default:
+                            // code to be executed if expression doesn't match any case
+                    }
+        */
+
+        var x = 10
+        var y = 20
+        var z = 30
+
+        // if (y > x) {
+        //     console.log('y is greater than x')
+        // } else {
+        //     console.log('x is greater than y')
+        // }+
+
+        // console.log("End of script")
+
+        // if (x>y) {
+        //     console.log('Test1')
+        // } else if (x>z) {
+        //     console.log('Test2')
+        // } else {
+        //     console.log('Test3')
+        // }
+
+         /* ----------------------------- */
+    // Example 1: Check if the number is greater than 100
+    // var number = Number(prompt('Enter any number')) 
+    // // Number() converts string input to number
+
+    // if(number > 100) {
+    //   console.log('Input is greater than 100')
+    // } else {
+    //   console.log('Input is not greater than 100')
+    // }
+
+    /* ----------------------------- */
+    // Example 2: Check if two numbers are equal or not
+    // var num1 = Number(prompt('Enter first number'))
+    // var num2 = Number(prompt('Enter first number'))
+
+    // if(num1 == num2) {
+    //   console.log('Both numbers are equal')
+    // } else {
+    //   console.log('Both numbers are unequal')
+    // }
+
+    /* ----------------------------- */
+    // Example 3: Find greater number among the 2 input numbers
+    // var num1 = Number(prompt('Enter first number'))
+    // var num2 = Number(prompt('Enter second number'))
+
+    // if(num1 > num2) {
+    //   console.log('Number 1 is greater than Number 2')
+    // } else if (num2 > num1) {
+    //   console.log('Number 2 is greater than Number 1')
+    // } else  {
+    //   console.log("Both the numbers are equal")
+    // }
+
+    /* ----------------------------- */
+    // Example 4: Find the color of the fruit
+
+    // Solution 1: if else condition
+    // var fruit = prompt('Enter fruit name')
+    // if(fruit == 'Apple') {
+    //   console.log('RED')
+    // } else if (fruit == 'Orange') {
+    //   console.log('ORANGE')
+    // } else if(fruit == 'Banana') {
+    //   console.log('YELLOW')
+    // } else {
+    //   console.log('NA')
+    // }
+
+    // Solution 2: switch case
+    // var fruit = prompt('Enter fruit name')
+    // switch(fruit) {
+    //   case 'Apple':
+    //     console.log('RED')
+    //     break
+    //   case 'Orange':
+    //     console.log('ORANGE')
+    //     break
+    //   case 'Banana':
+    //     console.log('YELLOW')
+    //     break
+    //   default:
+    //     console.log('NA')
+    // }
+
+    /* ----------------------------- */
+    var num1 = Number(prompt('Enter first number'))
+    var num2 = Number(prompt('Enter second number'))
+    // console.log(num1 == num2 ? 'EQUAL' : 'UNEQUAL')
+    console.log(num1 > num2 ? 'NUM1 greater' : (num1 < num2 ? 'NUM2 greater' : 'Both equal'))
+    </script>
+</body>
+</html>
