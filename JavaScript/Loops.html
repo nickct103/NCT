@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loops</title>
+</head>
+<body>
+    <h1>Loops in JavaScript</h1>
+    <script>
+       /*
+        # Loops: Something to be executed in a repeated basis
+            -Terms:
+              - Iteration: Individual cycles
+              - Condition: Determine to proceed or halt
+            - Process:
+                - In each iteration, condition will be checked
+                - Only if condition is true, iteration will be processed
+                - Else, loop will break
+            - One similarity in all types of loops:
+                - Initialization
+                - Condition
+                - Increment/ Decrement
+            - Types of loops:
+                - 'while' loop * - executes as long as a specified condition is true.  "Iteration" refers to each cycle of the loop.
+                    - Syntax:
+                        // Initialization
+                        while (condition) {
+                            // loop logic
+                            // increment/decrement
+                        }
+                - 'do-while' loop * - similar to while loop, but guarantees at least one execution of the loop body before checking the condition. (Similar to while loop, but checks condition after executing the loop body)
+                    - Syntax:
+                        // Initialization
+                        do {
+                            // loop logic
+                            // increment/decrement
+                        } while (condition);
+                - 'for' loop - used when the number of iterations is known beforehand. (Combines initialization, condition, and increment/decrement in a single line)
+                    - Syntax:
+                        for (initialization; condition; increment/decrement) {
+                            // loop logic
+                        }
+
+       */ 
+
+    // Example 1: Print first 10 numbers using while loop  
+    // var x = 1; // Initialization    
+    // while (x <= 10) {
+    //     console.log("The count is: " + x) // Condition
+    //     x++ // Increment
+    // }
+    // console.log("Loop ended")
+
+    // Example 2: Print first 10 numbers using do-while loop in reverse order
+    // var y = 10
+    // while (y != 0) {
+    //     console.log("The count is: " + y) // Condition
+    //     y-- // Decrement
+    // }
+    // console.log("Loop ended")
+
+    //  # Caution: Infinite loops (A loop where the condition never becomes false)
+
+    // Example 3: Print all even numbers from 0 to 100 using while loop
+    // var z = 0
+    // while (z <= 100) {
+    //     if (z % 2 != 0) {
+    //         console.log("The odd number is: " + z)
+    //     }
+    //     z++
+    // }
+
+    // Example 4: Print all characters of a string using while loop
+    // var student1 = 'Nicholas'
+    // var i = 0
+    // while (i < student1.length) {
+    //     console.log(student1[i])
+    //     i++
+    // }
+   
+    /*--------------------------------------------------------*/
+    // Example 1: print firs 10 numbers
+    // var a = 1
+    // do {
+    //     console.log(a)
+    //     a++
+    // } while(a <= 10)
+
+    // Example 2: (For loop) Print first 10 numbers
+    // for (var x= 0; x <= 10; x++) {
+    //     console.log(x)
+    // }
+
+    // var student1 = 'Nicholas'
+    // // var i = 0
+    // for ( var i = 0; i < student1.length; i++) {
+    //     console.log(student1[i])
+    // }
+
+    // Example 3: Evaluate all characters of a string and print whether it is a a vowel or consonant or none
+    var student1 = 'Nicholas Tharp'
+    for(var i = 0; i < student1.length; i++) {
+        if(student1[i] == 'a' || student1[i] == 'e' || student1[i] == 'i' || student1[i] == 'o' || student1[i] == 'u' || student1[i] == 'A' || student1[i] == 'E' || student1[i] == 'I' || student1[i] == 'O' || student1[i] == 'U') {
+            console.log(student1[i] + " is a vowel")
+        } else if (student1[i] == ' ') {
+            console.log("Space")
+        } else {
+            console.log(student1[i] + " is a consonant")
+        }
+    }
+    </script>
+</body>
+</html>
+
+<!-- 
+    # Future: 
+        - for of, for in
+-->
