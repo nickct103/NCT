@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Type Conversions</title>
+</head>
+<body>
+    <h1>Type Conversions in JavaScript</h1>
+    <script>
+        /*
+            # Type Conversions in JavaScript: Converting a value from one data type to another
+                - Implicit type conversion (Automatic)
+                    - a.k.a.- Type Coercion
+                    - Examples:
+                        - String to Number- == vs. ===
+                            - === - Strict equality operator (no type coercion, checks both value and type)
+                            - == - Equality operator (performs type coercion if types are different)
+                            -Arithmetic operators excluding the '+' operator
+                                - The '+' operator concatenates if one operand is a string
+                        - Number to String- Concatenation with a string
+                            - Arithmetic operator '+'
+                        - Any data type to Boolean
+                            - Valuse is directly placed in the condition placeholder
+                - Explicit type conversion (Manual)/ Type Casting
+                    - Using built-in functions to convert data types
+                    - Examples:
+                        - Inbuilt constructors
+                            - String to Number
+                                -Number(): Any data type to Number
+                                - parseInt(), parseFloat()
+                            - Number to String
+                                - String(): Any data type to String
+                                - toString(): Converts Number, Boolean, Array to String
+                            - Convert to Boolean
+                                - Boolean(): Any data type to Boolean
+                                - Double NOT operator (!!): Converts any value to its boolean equivalent
+            # NaN: Not a Number
+                -Represents an ivalid or unrepresentable number
+                - Result of an invalid or undefined mathematical operation
+                - Type of NaN is 'number'
+                - Examples:
+                    - Parsing errors: parseInt("abc") or parseFloat("xyz")
+                    - Invalid arithmetic operations: 0/0, Math.sqrt(-1)
+                - NaN is not equal to anything, including itself (NaN !== NaN)
+                - isNaN(): To check if a value is NaN or not
+                - Number.isNaN() to check for NaN
+                - type of NaN is 'number'
+                
+            # Truthy and Falsy values:
+                - Truthy values: Values that evaluate to true in a boolean context
+                    - Examples: Non-empty strings, non-zero numbers, objects, arrays, true
+                    - Number: Any non-zero number (positive or negative) will be True
+                    - String: Any non-empty string will be True
+                - Falsy values: Values that evaluate to false in a boolean context
+                    - Examples: false, 0, -0, 0n (BigInt zero), "", null, undefined, NaN
+                    - Number: 0 and NaN are False
+                    - String: An empty string ("") is False
+                - Used in conditional statements and logical operations
+
+        */
+    </script>
+</body>
+</html>
