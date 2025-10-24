@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functions</title>
+</head>
+<body>
+    <h1>Functions in JavaScript</h1>
+
+    <script>
+        /*
+            # Functions in JavaScript
+                - A set/block of code which is intended to perform a particular task
+                - Function can be executed as many times as needed
+                - Advantages of functions:
+                    - Avoid repeated code (redundancy)
+                        - DRY principle- Don't Repeat Yourself
+                    - Code reusability
+                    - Modular code (organized code)
+                - For any function to be executed in JavaScript. it needs two steps:
+                    1. Function Declaration/Definition
+                    2. Function Call/Invocation/Execution (Calling the function)
+                - Types of functions:
+                    - Standard functions
+                    - Anonymous functions (Does not have a name)
+                        -Used as a function expression and assigned to a variable
+
+                - Syntax:
+                    - Declaration:
+                        -Standard Function:
+                        function functionName(parameters) {
+                            // code to be executed
+                        }
+
+                        -Anonymous Function Expression:
+                        let functionName = function(parameters) {
+                            // code to be executed
+                        }
+                        
+                    - Invocation:
+                        functionName(arguments);
+
+                - Parameters vs Arguments:
+                    - Can make functions more dynamic by using parameters and arguments
+                        - Parameters: Variables listed as a part of the function definition
+                        - Arguments: Actual values passed to the function when calling/invoking it
+                    - Syntax:
+                        - Declaration:
+                            - function functionName(parameter1, parameter2) { // parameters
+                            // code to be executed
+                        }
+                        - Invocation:
+                            - functionName(argument1, argument2); // arguments
+                    - 'return' Statement:
+                        - Used to return a value from a function
+                        - Syntax:
+                            - return value;
+                        - When a return statement is executed, the function stops executing and returns the specified value to the caller
+        */
+
+
+        // Standard Function Declaration
+        // function greet(name) {
+        //     console.log("Hello, " + name + "!");
+        // }
+
+        // // Function Calls as many times as needed
+        // greet("Nicholas"); // Calling the function with argument "Nicholas"
+        // greet("Alice");   // Calling the function with argument "Alice"
+        // greet("Bob");     // Calling the function with argument "Bob"
+        // greet("Eve");     // Calling the function with argument "Eve"
+
+        // Anonymous Function Expression
+        // const abc = function() {
+        //     console.log("This is an anonymous function assigned to variable abc.");
+        // }
+
+        // abc(); // Calling the anonymous function
+
+        /*-----------------------------------------------*/
+        /*. # Example 1: Create a function to list the recipe steps for making a pizza
+            1. Prepare the pizza base
+            2. Add pizza sauce
+            3. Add toppings
+            4. Sprinkle cheese
+            5. Bake the pizza
+
+        */
+
+        // function makePizza() {
+        //     console.log("1. Prepare the pizza base");
+        //     console.log("2. Add pizza sauce");
+        //     console.log("3. Add toppings");
+        //     console.log("4. Sprinkle cheese");
+        //     console.log("5. Bake the pizza");
+        // }
+        // makePizza(); // Calling the function to make pizza
+        // console.log("Other code can go here...");
+        // makePizza(); // Calling the function again to make another pizza
+
+        /*-----------------------------------------------*/
+         /*. # Example 2: Create a function to find the sum of two numbers. */
+
+        // function addNumbers(num1, num2) {
+        //     let sum = num1 + num2;
+        //     console.log("The sum of " + num1 + " and " + num2 + " is: " + sum);
+        // }
+
+        // addNumbers(5, 10); // Calling the function with arguments 5 and 10
+        // addNumbers(20, 30); // Calling the function with arguments 20 and 30
+        // addNumbers(-5, 15); // Calling the function with arguments -5 and 15
+
+        /*-----------------------------------------------*/
+         /*. # Example 3: Create a function to display the full name of the user if firstName and lastName are provied. */
+
+        //  function displayFullName(firstName, lastName) {
+        //     if(firstName && lastName) {
+        //         console.log("Full Name: " + firstName + " " + lastName);
+        //     } else {
+        //         console.log("Please provide both first name and last name.");
+        //     }
+        //  }
+
+        //     displayFullName("Nicholas", "Cage"); // Calling the function with both names
+
+        /*. # Example 4: Create a function which takes an array of numbers as parameter and returns the average of those numbers. */
+
+        // function isEven(number) {
+        //     if(number % 2 === 0) {
+        //         console.log(number + " is an even number.");
+        //     } else {
+        //         console.log(number + " is an odd number.");
+        //     }
+        // }
+        // isEven(10); // Calling the function with argument 10
+        // isEven(7);  // Calling the function with argument 7
+
+        /*-----------------------------------------------*/
+        /*. # Example 5: Create a function which takes a number as parameter and whether it is an prime number or number */
+
+        // function isPrime(number) {
+        //     if(number <= 1) {
+        //         console.log(number + " is not a prime number.");
+        //         return;
+        //     }
+        //     for(let i = 2; i <= Math.sqrt(number); i++) {
+        //         if(number % i === 0) {
+        //             console.log(number + " is not a prime number.");
+        //             return;
+        //         }
+        //     }
+        //     console.log(number + " is a prime number.");
+        // }
+
+        // function checkPrime(num1) {
+        //     for(let i = 2; i < num1; i++) {
+        //         if (num1 % i == 0) {
+        //             console.log(num1 + " is not a prime number.");
+        //             return;
+        //         }
+        //     }
+
+        //     console.log(num1 + " is a prime number.");
+        // }
+
+        // checkPrime(29); // Calling the function with argument 29
+        // checkPrime(15); // Calling the function with argument 15        
+        // checkPrime(5);
+
+        /*-----------------------------------------------*/
+        /* # Example 6: Cre ate a function which takes a number as parameter and returns the factorial of that number */
+
+        // function factorial(num) {
+        //    let fact = 1
+        //    for(let i = num; i >= 2; i--) {
+        //     fact = fact * i
+        //    }
+        //    return fact  
+        // }
+
+        // function computeFactorial(n) {
+        //     if (n < 0) {
+        //         return "Factorial is not defined for negative numbers.";
+        //     }
+        //     let result = 1;
+        //     for (let i = 2; i <= n; i++) {
+        //         result *= i;
+        //     }
+        //     return result;
+        // }
+        
+        // console.log(factorial(5)); // Calling the function with argument 5
+        // console.log(computeFactorial(6)); // Calling the function with argument 6
+
+        /*-----------------------------------------------*/
+        /* # Example 7: Create a function which takes a 2 numbers as parameters and returns the average of two numbers */
+
+        // function average(num1, num2) {
+        //     let avg = (num1 + num2) / 2
+        //     return avg
+        // }
+
+        // console.log(average(10, 20)); // Calling the function with arguments 10 and 20
+
+        // function bignum(num1, num2, num3) {
+        //     if (num1 > num2 && num1 > num3) {
+        //         console.log(num1 + " is the greatest number")
+        //     } else if (num2 > num1 && num2 > num3) {
+        //         console.log(num2 + " is the greatest number")      
+        //     } else if (num3 > num1 && num3 > num2) {
+        //         console.log(num3 + " is the greatest number")
+        //     } else {
+        //         cosole.log("Two of these numbers are equal.")
+        //     }
+        // }
+
+
+
+    </script>
+</body>
+</html>
